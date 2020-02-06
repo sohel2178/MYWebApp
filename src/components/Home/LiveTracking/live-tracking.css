@@ -1,0 +1,60 @@
+.main-wrapper {
+  background-color: #ccc;
+}
+
+.live-tracking-wrapper {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-wrapper,
+.right-wrapper {
+  /* background-color: cadetblue; */
+  flex-grow: 1;
+  padding: 30px;
+  width: 50%;
+  max-width: 50%;
+}
+
+.left-wrapper span {
+  background-color: wheat;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.left-wrapper h1 {
+  font-size: 2em;
+  font-weight: 400 !important;
+  line-height: 1.31818182em;
+  margin: 15px 0;
+}
+
+.left-wrapper h4 {
+  margin: 15px 0px;
+}
+
+.left-wrapper ul > li {
+  list-style: none;
+  margin: 10px 0;
+  line-height: 1.5rem;
+}
+
+.right-wrapper img {
+  width: 30%;
+  margin: 0 50px;
+}
+
+/* #curve2 path {
+  fill: #000;
+} */
+
+svg {
+  position: relative;
+  bottom: 0;
+}
+/* .right-wrapper {
+  background-color: cadetblue;
+  flex-grow: 1;
+  padding: 20px;
+} */

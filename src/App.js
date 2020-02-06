@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Nav from "./components/Nav";
 
-function App() {
+import { Route, withRouter, Switch } from "react-router-dom";
+import HomePage from "./components/Home";
+import * as ROUTES from "./utils/routes";
+import FeaturesPage from "./components/Features";
+import FleetManagementPage from "./components/FleetManagement";
+import TestPage from "./components/Test";
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <TestPage />
+    <div className="container">
+      <nav>
+        <Nav />
+      </nav>
+      <main>
+        <Switch>
+          <Route path={ROUTES.HOME} component={HomePage} exact />
+          <Route path={ROUTES.FEATURES} component={FeaturesPage} exact />
+          <Route
+            path={ROUTES.FLEET_MANAGEMENT}
+            component={FleetManagementPage}
+            exact
+          />
+        </Switch>
+      </main>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
