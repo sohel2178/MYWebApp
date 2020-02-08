@@ -1,7 +1,7 @@
 {
   "name": "vts-tracker",
   "version": "0.1.0",
-  "homepage": "https://sohel2178.github.io/MYWebApp",
+  "homepage": "http://sohel2178.github.io/MYWebApp/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
